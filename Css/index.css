@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@700&family=Tiro+Kannada&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arizonia&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Splash&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  background: black;
+  position: -webkit-sticky;
+  position: sticky;
+  height: 15vh;
+  align-items: center;
+  font-size: 21px;
+  font-family: "Cormorant SC", serif;
+  top: 0;
+}
+.container .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+}
+.container .sticky + .content {
+  padding-top: 60px;
+}
+.container .logo {
+  flex-grow: 6;
+  color: #fff;
+}
+.container #img {
+  max-height: 4vh;
+  margin-left: 9vw;
+  padding-right: 1vw;
+}
+.container .navLinks {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-decoration: none;
+  padding-right: 6vw;
+  flex-wrap: nowrap;
+  color: #fff;
+}
+
+/* Body Section */
+.hContainer {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+
+.wwContainer {
+  height: 50vh;
+  background-color: rgb(233, 200, 160);
+  background: url(/Images/backg2.jpg);
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  background-attachment: fixed;
+}
+.wwContainer .roam {
+  color: #fff;
+  font-family: "Cormorant SC", serif;
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 125px;
+  letter-spacing: 55px;
+  align-items: center;
+  padding-top: 60px;
+}
+.wwContainer .adventure {
+  color: #fff;
+  font-family: "Cormorant SC", serif;
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 90px;
+  letter-spacing: px;
+  align-items: center;
+  padding-top: 60px;
+}
+@media screen and (max-width: 1024px) {
+  .wwContainer .adventure {
+    font-size: 59px;
+    padding-top: 20px;
+  }
+}
+
+.grid {
+  padding: 60px 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 5px;
+  width: 100vw;
+  height: 90vh;
+}
+.grid #item-0 {
+  background: url(/Images/kashmir.png);
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 5;
+  grid-column-end: 2;
+  background-size: cover;
+}
+.grid .item0 {
+  font-family: "Cormorant SC", serif;
+  color: #fff;
+  text-align: center;
+  padding-top: 60px;
+  font-size: 40px;
+}
+.grid #item-1 {
+  background: url(/Images/boat.png);
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-row-end: 3;
+  grid-column-end: 2;
+  background-size: cover;
+}
+.grid #item-2 {
+  background: url(/Images/thailand.png);
+  grid-row-start: 3;
+  grid-column-start: 2;
+  grid-row-end: 5;
+  grid-column-end: 2;
+  background-size: cover;
+}
+.grid #item-3 {
+  background: url(/Images/sea1.jpg);
+  grid-row-start: 4;
+  grid-column-start: 3;
+  grid-row-end: 4;
+  grid-column-end: 6;
+  background-size: cover;
+  background-position: center;
+}
+.grid #item-4 {
+  background: url(/Images/thailand.png);
+  grid-row-start: 1;
+  grid-column-start: 3;
+  grid-row-end: 4;
+  grid-column-end: 6;
+  background-size: cover;
+}
+
+.multiColumn {
+  text-align: center;
+}
+.multiColumn .grid1 {
+  padding: 60px 30px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 15px;
+  width: 100vw;
+  height: 70vh;
+}
+.multiColumn .grid1 #item-6 {
+  background: url(/Images/hik.jpg);
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 6;
+  grid-column-end: 1;
+  background-size: cover;
+}
+.multiColumn .grid1 #item-7 {
+  background: url(/Images/culture1.jpg);
+  grid-row-start: 1;
+  grid-column-start: 3;
+  grid-row-end: 6;
+  grid-column-end: 2;
+  background-size: cover;
+}
+.multiColumn .grid1 #item-8 {
+  background: url(/Images/backg2.jpg);
+  grid-row-start: 1;
+  grid-column-start: 3;
+  grid-row-end: 6;
+  grid-column-end: 3;
+  background-size: cover;
+}
+.multiColumn .grid1 #item-9 {
+  background: url(/Images/backg2.jpg);
+  grid-row-start: 1;
+  grid-column-start: 4;
+  grid-row-end: 6;
+  grid-column-end: 4;
+  background-size: cover;
+}
+.multiColumn .grid1 #item-10 {
+  background: url(/Images/backg2.jpg);
+  grid-row-start: 1;
+  grid-column-start: 5;
+  grid-row-end: 6;
+  grid-column-end: 6;
+  background-size: cover;
+}
+.multiColumn .grid1 #item-11 {
+  background: url(/Images/backg2.jpg);
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 6;
+  grid-column-end: 1;
+  background-size: cover;
+}
+.multiColumn .grid1 #item-7 {
+  background: url(/Images/backg2.jpg);
+  grid-row-start: 1;
+  grid-column-start: 3;
+  grid-row-end: 6;
+  grid-column-end: 2;
+  background-size: cover;
+}
+.multiColumn .grid1 #item-8 {
+  background: url(/Images/backg2.jpg);
+  grid-row-start: 1;
+  grid-column-start: 3;
+  grid-row-end: 6;
+  grid-column-end: 3;
+  background-size: cover;
+}
+.multiColumn .grid1 #item-9 {
+  background: url(/Images/backg2.jpg);
+  grid-row-start: 1;
+  grid-column-start: 4;
+  grid-row-end: 6;
+  grid-column-end: 4;
+  background-size: cover;
+}
+.multiColumn .grid1 #item-10 {
+  background: url(/Images/backg4.jpg);
+  grid-row-start: 1;
+  grid-column-start: 5;
+  grid-row-end: 6;
+  grid-column-end: 6;
+  background-size: cover;
+}
+
+video {
+  height: 60vh;
+  width: 100% !important;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  font-family: "Cormorant SC", serif;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+footer {
+  background-color: rgb(0, 0, 0);
+  color: #bbb;
+  line-height: 1.5;
+}
+
+footer a {
+  text-decoration: none;
+  color: #eee;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.footerTitle {
+  color: #fff;
+  font-family: "Merriweather", serif;
+  font-size: 1.375rem;
+  padding-bottom: 0.625rem;
+}
+
+.footerMain {
+  padding: 1.25rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 29.8125rem) {
+  .footerMain {
+    justify-content: space-evenly;
+  }
+}
+@media only screen and (min-width: 77.5rem) {
+  .footerMain {
+    justify-content: space-evenly;
+  }
+}
+.footerItem {
+  padding: 1.25rem;
+  min-width: 12.5rem;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+input[type=email] {
+  border: 0;
+  padding: 0.625rem;
+  margin-top: 0.3125rem;
+}
+
+input[type=submit] {
+  background-color: #00d188;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  padding: 0.65rem 2rem;
+  margin-top: 0.3125rem;
+}
+
+.footerSocial {
+  padding: 0 1.875rem 1.25rem;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  border-top: 1px rgb(247, 243, 243) solid;
+  padding-top: 1.25rem;
+}
+
+.list li {
+  margin: 0.5rem;
+  font-size: 1.25rem;
+}/*# sourceMappingURL=index.css.map */

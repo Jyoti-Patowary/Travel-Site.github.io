@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@700&family=Tiro+Kannada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Splash&display=swap');
+
+$nav: 'Cormorant SC', serif ;
+$hbody: 'Arizonia', cursive;
+$white: #fff;
+$Montserrat:'Montserrat', sans-serif;
+$Kaushan : 'Kaushan Script', cursive;
+$Splash: 'Splash', cursive;
+
+* {
+    margin: 0;
+    padding: 0;
+	left: 0;
+    box-sizing: border-box;
+}
+
+.container {
+	display: flex;
+    background: black;
+    position: sticky;
+    // width: 100vw;
+    height: 15vh;
+    align-items: center;
+    font-size: 21px;
+    font-family: $nav;
+	top: 0;
+
+	.sticky {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		background-color: #fff;
+	  }
+	  
+	  .sticky + .content {
+		padding-top: 60px;
+	  }
+.logo {
+	flex-grow: 6;
+	// padding-left: 11vw;
+	color: #fff;
+}
+
+ #img {
+	max-height: 4vh;
+	margin-left: 9vw;
+	padding-right: 1vw;
+}
+
+.navLinks {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	text-decoration: none;
+	padding-right: 6vw;
+	flex-wrap: nowrap;
+	color: #fff;
+}
+
+}
+
+/* Body Section */
+
+.hContainer {
+	height: 100vh;
+	width: 100%;
+	background-color: black; 
+}
+	
+
+
+
+// 3rd Part
+
+
+.wwContainer {
+	height: 50vh;
+	background-color: rgb(233, 200, 160);
+	background: url(/Images/backg2.jpg);
+	background-size: cover;
+	background-position: center;
+	align-items: center;
+	background-attachment: fixed;
+	
+
+
+	.roam {
+		color: $white;
+		font-family: $nav;
+		display: flex;
+		justify-content: center;
+		font-family:$Montserrat ;
+		font-size:125px ;
+		letter-spacing: 55px;
+		align-items: center;
+		padding-top: 60px;
+	}
+
+	
+
+	.adventure {
+		color: $white;
+		font-family: $nav;
+		display: flex;
+		justify-content: center;
+		font-family:$Montserrat ;
+		font-size:90px ;
+		letter-spacing: px;
+		align-items: center;
+		padding-top: 60px;
+	}
+
+	@media screen and (max-width: 1024px) {
+		.adventure {
+			font-size: 59px;
+			padding-top: 20px;
+		}
+	}
+
+}
+
+// 3rd part
+
+// .thirdContainer {
+// 	height: 90vh;
+	
+// }
+
+.grid {
+	
+	padding: 60px 30px;
+	display: grid;
+    grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+    grid-gap: 5px;
+	width: 100vw;
+	height: 90vh;
+
+	@media screen and (max-width: 1024px) {
+		
+	}
+
+	#item-0{
+		background: url(/Images/kashmir.png);
+		grid-row-start: 1;
+		grid-column-start: 1;
+		grid-row-end: 5;
+		grid-column-end: 2;
+		background-size: cover;
+	}
+	.item0 {
+		font-family: $nav;
+		color: $white;
+		text-align: center;
+		padding-top: 60px;
+		font-size: 40px;
+	}
+
+	#item-1 {
+		background: url(/Images/boat.png);
+		grid-row-start: 1 ;
+		grid-column-start: 2;
+		grid-row-end: 3;
+		grid-column-end: 2;
+		background-size: cover;
+	}
+	#item-2 {
+		background: url(/Images/thailand.png);
+		grid-row-start: 3;;
+		grid-column-start: 2;
+		grid-row-end: 5;
+		grid-column-end: 2;
+		background-size: cover;
+	}
+	#item-3 {
+		background: url(/Images/sea1.jpg);
+		grid-row-start: 4;
+		grid-column-start: 3;
+		grid-row-end: 4;
+		grid-column-end: 6;
+		background-size:cover;
+		background-position: center;
+	}
+	#item-4 {
+		background: url(/Images/thailand.png);
+		grid-row-start: 1;
+		grid-column-start: 3;
+		grid-row-end: 4;
+		grid-column-end: 6;
+		background-size: cover;
+	}
+}
+
+.multiColumn {
+	text-align: center;
+
+	.grid1 {
+	
+		padding: 60px 30px;
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		grid-template-rows: repeat(5, 1fr);
+		grid-gap: 15px;
+		width: 100vw;
+		height: 70vh;
+
+	#item-6 {
+		background: url(/Images/hik.jpg);
+		grid-row-start: 1;
+		grid-column-start: 1;
+		grid-row-end: 6;
+		grid-column-end: 1;
+		background-size: cover;
+}
+
+#item-7 {
+	background: url(/Images/culture1.jpg);
+	grid-row-start: 1;
+	grid-column-start: 3;
+	grid-row-end: 6;
+	grid-column-end: 2;
+	background-size: cover;
+}
+
+#item-8 {
+	background: url(/Images/backg2.jpg);
+	grid-row-start: 1;
+	grid-column-start: 3;
+	grid-row-end: 6;
+	grid-column-end: 3;
+	background-size: cover;
+}
+
+#item-9 {
+	background: url(/Images/backg2.jpg);
+	grid-row-start: 1;
+	grid-column-start: 4;
+	grid-row-end: 6;
+	grid-column-end: 4;
+	background-size: cover;
+}
+
+#item-10 {
+	background: url(/Images/backg2.jpg);
+	grid-row-start: 1;
+	grid-column-start: 5;
+	grid-row-end: 6;
+	grid-column-end: 6;
+	background-size: cover;
+}
+
+#item-11 {
+	background: url(/Images/backg2.jpg);
+	grid-row-start: 1;
+	grid-column-start: 1;
+	grid-row-end: 6;
+	grid-column-end: 1;
+	background-size: cover;
+}
+
+#item-7 {
+background: url(/Images/backg2.jpg);
+grid-row-start: 1;
+grid-column-start: 3;
+grid-row-end: 6;
+grid-column-end: 2;
+background-size: cover;
+}
+
+#item-8 {
+background: url(/Images/backg2.jpg);
+grid-row-start: 1;
+grid-column-start: 3;
+grid-row-end: 6;
+grid-column-end: 3;
+background-size: cover;
+}
+
+#item-9 {
+background: url(/Images/backg2.jpg);
+grid-row-start: 1;
+grid-column-start: 4;
+grid-row-end: 6;
+grid-column-end: 4;
+background-size: cover;
+}
+
+#item-10 {
+background: url(/Images/backg4.jpg);
+grid-row-start: 1;
+grid-column-start: 5;
+grid-row-end: 6;
+grid-column-end: 6;
+background-size: cover;
+}
+	}
+}
+
+
+
+// 4th Part
+video {
+	height: 60vh;
+	width: 100% !important;
+	object-fit: fill;
+	
+}
+
+// Footer Part
+
+ul {
+	list-style: none;
+	padding-left: 0;
+	font-family: $nav;
+	font-size: 20px;
+	letter-spacing: 3px;
+  }
+  footer {
+	background-color: rgb(0, 0, 0);
+	color: #bbb;
+	line-height: 1.5;
+  }
+  footer a {
+	text-decoration: none;
+	color: #eee;
+  }
+  a:hover {
+	text-decoration: underline;
+  }
+  .footerTitle {
+	color: #fff;
+	font-family: "Merriweather", serif;
+	font-size: 1.375rem;
+	padding-bottom: 0.625rem;
+  }
+
+  .footerMain {
+	padding: 1.25rem 2rem;
+	display: flex;
+	flex-wrap: wrap;
+  }
+  @media only screen and (min-width: 29.8125rem /* 477px */) {
+	.footerMain {
+	  justify-content: space-evenly;
+	}
+  }
+  @media only screen and (min-width: 77.5rem /* 1240px */) {
+	.footerMain {
+	  justify-content: space-evenly;
+	}
+  }
+  .footerItem {
+	padding: 1.25rem;
+	min-width: 12.5rem;
+  }
+  
+  form {
+	display: flex;
+	flex-wrap: wrap;
+  }
+  input[type="email"] {
+	border: 0;
+	padding: 0.625rem;
+	margin-top: 0.3125rem;
+  }
+  input[type="submit"] {
+	background-color: #00d188;
+	color: #fff;
+	cursor: pointer;
+	border: 0;
+	padding: 0.65rem 2rem;
+	margin-top: 0.3125rem;
+  }
+ 
+  .footerSocial {
+	padding: 0 1.875rem 1.25rem;
+  }
+  .list {
+	display: flex;
+	justify-content: center;
+	border-top: 1px rgb(247, 243, 243) solid;
+	padding-top: 1.25rem;
+  }
+  .list li {
+	margin: 0.5rem;
+	font-size: 1.25rem;
+  }
