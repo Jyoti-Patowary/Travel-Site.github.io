@@ -18,6 +18,10 @@ $Splash: 'Splash', cursive;
     box-sizing: border-box;
 }
 
+
+html {
+	scroll-behavior: smooth;
+}
 .container {
 	display: flex;
     background: black;
@@ -28,7 +32,7 @@ $Splash: 'Splash', cursive;
     align-items: center;
     font-size: 29px;
     font-family: $nav;
-	top: 0;
+	top: 0;>
 
 	.sticky {
 		position: fixed;
@@ -42,7 +46,7 @@ $Splash: 'Splash', cursive;
 		padding-top: 60px;
 	  }
 .logo {
-	flex-grow: 6;
+	flex-grow: 6;>
 	// padding-left: 11vw;
 	color: #fff;
 }
@@ -128,13 +132,7 @@ $Splash: 'Splash', cursive;
 		font-size:90px ;
 		letter-spacing: px;
 		align-items: center;
-		padding-top: 60px;
-	}
-
-	@media screen and (max-width: 1024px) {
-		.adventure {
-			font-size: 59px;
-			padding-top: 20px;
+		padding-top:>top: 20px;
 		}
 	}
 
@@ -265,26 +263,12 @@ $Splash: 'Splash', cursive;
 }
 
 #item-10 {
-	background: url(/Images/backg2.jpg);
-	grid-row-start: 1;
-	grid-column-start: 5;
-	grid-row-end: 6;
-	grid-column-end: 6;
-	background-size: cover;
-}
+	background: url(>
 
 #item-11 {
 	background: url(/Images/backg2.jpg);
 	grid-row-start: 1;
-	grid-column-start: 1;
-	grid-row-end: 6;
-	grid-column-end: 1;
-	background-size: cover;
-}
-
-#item-7 {
-background: url(/Images/backg2.jpg);
-grid-row-start: 1;
+	grid-column-star>
 grid-column-start: 3;
 grid-row-end: 6;
 grid-column-end: 2;
@@ -297,7 +281,7 @@ grid-row-start: 1;
 grid-column-start: 3;
 grid-row-end: 6;
 grid-column-end: 3;
-background-size: cover;
+background-size: cov>er;
 }
 
 #item-9 {
