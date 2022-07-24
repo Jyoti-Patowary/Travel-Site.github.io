@@ -24,6 +24,7 @@ $Splash: 'Splash', cursive;
     position: sticky;
     // width: 100vw;
     height: 10vh;
+	
     align-items: center;
     font-size: 29px;
     font-family: $nav;
@@ -225,7 +226,7 @@ $Splash: 'Splash', cursive;
 		height: 70vh;
 
 	#item-6 {
-		background: url(/Images/hik.jpg);
+		background: url(/Images/thailand.png);
 		grid-row-start: 1;
 		grid-column-start: 1;
 		grid-row-end: 6;
@@ -233,6 +234,9 @@ $Splash: 'Splash', cursive;
 		background-size: cover;
 }
 
+:hover #item-6{
+	background-size: 20px;
+}
 #item-7 {
 	background: url(/Images/culture1.jpg);
 	grid-row-start: 1;

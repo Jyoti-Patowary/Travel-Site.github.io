@@ -179,12 +179,15 @@
   height: 70vh;
 }
 .multiColumn .grid1 #item-6 {
-  background: url(/Images/hik.jpg);
+  background: url(/Images/thailand.png);
   grid-row-start: 1;
   grid-column-start: 1;
   grid-row-end: 6;
   grid-column-end: 1;
   background-size: cover;
+}
+.multiColumn .grid1 :hover #item-6 {
+  background-size: 20px;
 }
 .multiColumn .grid1 #item-7 {
   background: url(/Images/culture1.jpg);
