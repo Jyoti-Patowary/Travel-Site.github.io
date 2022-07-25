@@ -8,6 +8,7 @@
   padding: 0;
   left: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -15,26 +16,29 @@
   background: black;
   position: -webkit-sticky;
   position: sticky;
-  height: 10vh;
+  height: 5rem;
+  width: 100vw;
   align-items: center;
   font-size: 29px;
   font-family: "Cormorant SC", serif;
   top: 0;
+  z-index: 99;
 }
-.container .sticky {
+
+.sticky {
   position: fixed;
+  background: rgb(255, 255, 255);
   top: 0;
-  width: 90%;
-  height: 15vh;
-  background-color: #fff;
+  height: 6rem;
+  overflow: hidden;
+  transition: 0.5s ease-out;
 }
-.container .sticky + .content {
-  padding-top: 60px;
-}
+
 .container .logo {
   flex-grow: 6;
-  color: #fff;
+  color: rgb(228, 50, 50);
 }
+
 .container #img {
   max-height: 4vh;
   margin-left: 9vw;
@@ -48,15 +52,13 @@
   text-decoration: none;
   margin: 3vw;
   flex-wrap: nowrap;
-  color: #fff;
-  box-shadow: inset 0 0 0 0 #54b3d6;
-  color: #54b3d6;
+  color: #eb0404;
 }
 
 /* Body Section */
 .hContainer {
-  height: 90vh;
-  background: url(https://source.unsplash.com/random?landscape,mountain);
+  height: 50vh;
+  background: url(/Images/hills-gde8648f93_1920.jpg);
   background-size: cover;
   text-align: center;
 }
@@ -68,6 +70,7 @@
   font-weight: 2em;
   font-family: "Cormorant SC", serif;
   color: red;
+  padding-top: 50px;
 }
 
 .wwContainer {
@@ -79,6 +82,7 @@
   align-items: center;
   background-attachment: fixed;
 }
+
 .wwContainer .roam {
   color: #fff;
   font-family: "Cormorant SC", serif;
@@ -90,6 +94,7 @@
   align-items: center;
   padding-top: 60px;
 }
+
 .wwContainer .adventure {
   color: #fff;
   font-family: "Cormorant SC", serif;
@@ -101,13 +106,13 @@
   align-items: center;
   padding-top: 60px;
 }
+
 @media screen and (max-width: 1024px) {
   .wwContainer .adventure {
     font-size: 59px;
     padding-top: 20px;
   }
 }
-
 .grid {
   padding: 60px 30px;
   display: grid;
@@ -117,6 +122,7 @@
   width: 100vw;
   height: 90vh;
 }
+
 .grid #item-0 {
   background: url(/Images/kashmir.png);
   grid-row-start: 1;
@@ -125,6 +131,7 @@
   grid-column-end: 2;
   background-size: cover;
 }
+
 .grid .item0 {
   font-family: "Cormorant SC", serif;
   color: #fff;
@@ -132,14 +139,16 @@
   padding-top: 60px;
   font-size: 40px;
 }
+
 .grid #item-1 {
-  background: url(/Images/boat.png);
+  background: url(/Images/city.png);
   grid-row-start: 1;
   grid-column-start: 2;
   grid-row-end: 3;
   grid-column-end: 2;
   background-size: cover;
 }
+
 .grid #item-2 {
   background: url(/Images/thailand.png);
   grid-row-start: 3;
@@ -148,6 +157,7 @@
   grid-column-end: 2;
   background-size: cover;
 }
+
 .grid #item-3 {
   background: url(/Images/sea1.jpg);
   grid-row-start: 4;
@@ -157,6 +167,7 @@
   background-size: cover;
   background-position: center;
 }
+
 .grid #item-4 {
   background: url(/Images/backg4.jpg);
   grid-row-start: 1;
@@ -169,6 +180,7 @@
 .multiColumn {
   text-align: center;
 }
+
 .multiColumn .grid1 {
   padding: 60px 30px;
   display: grid;
@@ -178,83 +190,49 @@
   width: 100vw;
   height: 70vh;
 }
+
 .multiColumn .grid1 #item-6 {
-  background: url(/Images/thailand.png);
+  background: url(/Images/joris-meier-wmQ4hbRFg_s-unsplash.jpg);
   grid-row-start: 1;
   grid-column-start: 1;
   grid-row-end: 6;
   grid-column-end: 1;
   background-size: cover;
 }
+
 .multiColumn .grid1 :hover #item-6 {
   background-size: 20px;
 }
+
 .multiColumn .grid1 #item-7 {
-  background: url(/Images/culture1.jpg);
+  background: url(/Images/lucas-mordzin-I4W8z_zMRlE-unsplash.jpg);
   grid-row-start: 1;
   grid-column-start: 3;
   grid-row-end: 6;
   grid-column-end: 2;
   background-size: cover;
 }
+
 .multiColumn .grid1 #item-8 {
-  background: url(/Images/backg2.jpg);
+  background: url(/Images/giraffe.png);
   grid-row-start: 1;
   grid-column-start: 3;
   grid-row-end: 6;
   grid-column-end: 3;
   background-size: cover;
 }
+
 .multiColumn .grid1 #item-9 {
-  background: url(/Images/backg2.jpg);
+  background: url(/Images/jeremy-bishop-LkaGRQiic78-unsplash.jpg);
   grid-row-start: 1;
   grid-column-start: 4;
   grid-row-end: 6;
   grid-column-end: 4;
   background-size: cover;
 }
+
 .multiColumn .grid1 #item-10 {
-  background: url(/Images/backg2.jpg);
-  grid-row-start: 1;
-  grid-column-start: 5;
-  grid-row-end: 6;
-  grid-column-end: 6;
-  background-size: cover;
-}
-.multiColumn .grid1 #item-11 {
-  background: url(/Images/backg2.jpg);
-  grid-row-start: 1;
-  grid-column-start: 1;
-  grid-row-end: 6;
-  grid-column-end: 1;
-  background-size: cover;
-}
-.multiColumn .grid1 #item-7 {
-  background: url(/Images/backg2.jpg);
-  grid-row-start: 1;
-  grid-column-start: 3;
-  grid-row-end: 6;
-  grid-column-end: 2;
-  background-size: cover;
-}
-.multiColumn .grid1 #item-8 {
-  background: url(/Images/backg2.jpg);
-  grid-row-start: 1;
-  grid-column-start: 3;
-  grid-row-end: 6;
-  grid-column-end: 3;
-  background-size: cover;
-}
-.multiColumn .grid1 #item-9 {
-  background: url(/Images/backg2.jpg);
-  grid-row-start: 1;
-  grid-column-start: 4;
-  grid-row-end: 6;
-  grid-column-end: 4;
-  background-size: cover;
-}
-.multiColumn .grid1 #item-10 {
-  background: url(/Images/backg4.jpg);
+  background: url(/Images/kyryl-levenets-YkORAMnnsg0-unsplash.jpg);
   grid-row-start: 1;
   grid-column-start: 5;
   grid-row-end: 6;
@@ -266,7 +244,7 @@ video {
   height: 60vh;
   width: 100% !important;
   -o-object-fit: fill;
-     object-fit: fill;
+  object-fit: fill;
 }
 
 ul {
