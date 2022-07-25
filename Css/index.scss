@@ -56,28 +56,76 @@
 
 
 /* Body Section */
-.hContainer {
-  height: 50vh;
-  background: url(/Images/hills-gde8648f93_1920.jpg);
-  background-size: cover;
-  text-align: center;
-}
+// .hContainer {
+//   height: 50vh;
+//   background: url(/Images/hills-gde8648f93_1920.jpg);
+//   background-size: cover;
+//   text-align: center;
+// }
 
-.hTitle {
-  position: relative;
-  align-items: center;
-  font-size: 60px;
-  font-weight: 2em;
-  font-family: "Cormorant SC", serif;
-  color: red;
-  padding-top: 50px;
-}
+// .hTitle {
+//   position: relative;
+//   align-items: center;
+//   font-size: 60px;
+//   font-weight: 2em;
+//   font-family: "Cormorant SC", serif;
+//   color: red;
+//   padding-top: 50px;
+// }
 
 // // sContainer
-// .sContainer {
-// 	background: url(/Images/ines-alvarez-fdez-_HHjiseEuGw-unsplash.jpg);
-// 	height: 60vh;
-// }
+@mixin white-gradient {
+	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+}
+$animationSpeed: 40s;
+
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7))}
+}
+
+.slider {
+	background: white;
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+	height: 100px;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	width: 100vw;
+  background-size: 50px;
+	
+	&::before,
+	&::after {
+		@include white-gradient;
+		content: "";
+		height: 100px;
+		position: absolute;
+		width: 200px;
+		z-index: 2;
+	}
+	
+	&::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	&::before {
+		left: 0;
+		top: 0;
+	}
+	
+	.slide-track {
+		animation: scroll $animationSpeed linear infinite;
+		display: flex;
+		width: calc(250px * 14);
+	}
+	
+	.slide {
+		height: 100px;
+		width: 250px;
+	}
+}
 
 // Roam Section
 .wwContainer {
@@ -174,6 +222,87 @@
   grid-row-end: 4;
   grid-column-end: 6;
   background-size: cover;
+}
+
+//Carousel 
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
 }
 
 // Multi Column Part
@@ -283,6 +412,8 @@ video {
      object-fit: fill;
 }
 
+//Contact 
+
 // Footer Part
 
 ul {
@@ -371,3 +502,25 @@ input[type=submit] {
   margin: 0.5rem;
   font-size: 1.25rem;
 }
+
+// Social Media
+
+<header>
+<div class="hContainer">
+  <h1 class="hTitle">Explore the colorful world </h1>
+<div class="line"></div>
+<h2 class="hTitle">Just beautiful</h2>
+
+
+<button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button>
+
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <p>Some text. Some text. Some text.</p>
+        <p>Some text. Some text. Some text.</p>
+   </div>
+</div>
+</div>
+</header>
