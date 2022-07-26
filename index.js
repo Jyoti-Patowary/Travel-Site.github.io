@@ -33,25 +33,43 @@ window.scroll({
    behavior: 'smooth' 
  });
 
- //Carousel
-
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-
-// Get the <span> element that closes the modal
+// modal
+var modal = document.getElementById("modalContent");
+var btn = document.getElementById("mmodal");
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on <span> (x), close the modal
+btn.onclick = function() {
+  modal.style.display = "block"
+}
+
 span.onclick = function() {
   modal.style.display = "none";
 }
+
+window.onclick = function (event) {
+  if (event.target === modal){
+    modal.style.display = 'none';
+  }
+}
+// //Scroll in navlinks
+
+// const sections = document.querySelectorAll("section[id]");
+// window.addEventListener("scroll", navHighlighter);
+
+// function navHighlighter() {
+//   let scrollY = window.pageYOffset;
+//   console.log(scrollY);
+//   sections.forEach(current => {
+//     const sectionHeight = current.offsetHeight;
+//     const sectionTop = current.offsetTop - 50;
+//     sectionId = current.getAttribute("id");
+//     if (
+//       scrollY > sectionTop &&
+//       scrollY <= sectionTop + sectionHeight
+//     ){
+//       document.querySelectorAll(".container a[href*=" + sectionId + "]").classList.add("active");
+//     } else {
+//       document.querySelectorAll(".container a[href*=" + sectionId + "]").classList.remove("active");
+//     }
+//   });
+// }

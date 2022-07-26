@@ -4,7 +4,6 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="Css/index.css" media>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Travel Bae</title>
 </head>
 <body>
@@ -13,10 +12,18 @@
 		<nav id="container" class="container">
 			<img src="Images/ee.svg" id="img">
 			 <div class="logo">Travel Bae</div>
-			<div class="a"><a href="/" class="navLinks" id="/">Home</a></div>
-			<div class="a"><a href="#wwContainer" class="navLinks" >World Within</a></div>
-			<div class="a"><a href="/" class="navLinks">Contact</a></div>
-			<div class="a"><a href="/" class="navLinks">About Us</a></div>
+			<section id="home">
+				<div class="a"><a href="#wwContainer" class="navLinks">Home</a></div>
+			</section>
+			<section id="world">
+			<div class="a"><a href="#thirdContainer" class="navLinks" >World Within</a></div>
+			</section>
+			<section id="contact">
+			<div class="a"><a href="#" class="navLinks">Contact</a></div>
+			</section>
+			<section id="about">
+			<div class="a"><a href="#fourthContainer" class="navLinks">About Us</a></div>
+			</section>
 	</nav>
     <!-- <! Header Section > -->
     	<!-- <header>
@@ -96,21 +103,13 @@
 
 		<!-- Carousel -->
 
-		<!-- Trigger the Modal -->
-<img id="myImg" src="/Images/thailand.png" alt="Snow" style="width:100%;max-width:300px">
-
-<!-- The Modal -->
+		<!-- The Modal -->
+<!-- <img id="myImg" src="/Images/thailand.png" alt="Snow" style="width:100%;max-width:300px">
 <div id="myModal" class="modal">
-
-  <!-- The Close Button -->
-  <span class="close">&times;</span>
-
-  <!-- Modal Content (The Image) -->
-  <img class="modal-content" id="img01">
-
-  <!-- Modal Caption (Image Text) -->
+    <span class="close">&times;</span>
+   <img class="modal-content" id="img01">
   <div id="caption"></div>
-</div>
+</div> -->
 			
 		<!-- 4th Part -->
 		<div class="thirdContainer">
@@ -150,7 +149,7 @@
 		<!-- 5th Part -->
 
 		<div class="forthContainer">
-			<video autoplay muted loop controls>
+			<video controls>
 				<source src="/Video/Pexels Videos 1675442.mp4" type="video/mp4">
 				<p>Your browser doesn't support HTML5 video. Here is
 				   a <a href="Video/video.mp4">link to the video</a> instead.</p>
@@ -187,13 +186,20 @@
       <p>Stay Updated & Subscribe to our newsletter</p>
       <form>
         <input type="email" name="email" placeholder="Enter email address">
-        <input type="submit" value="Subscribe">
+        <button id="mmodal">Subscribe</button>
+
       </form>
     </div>
   </section>
  
-  <script type="text/javascript" src="index.js"></script>
-		</div>
-
+  
+</div>
+<div class="modal-content" id="modalContent">
+	<div class="modal">
+		<span class="close">x</span>
+		<div class="text">Thanks for Subscribing</div>
+	</div>
+</div>
+<script type="text/javascript" src="index.js"></script>
 </body>
 </html>
